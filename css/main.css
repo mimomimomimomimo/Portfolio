@@ -9523,7 +9523,31 @@ body header {
 
 body header .overlay {
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  z-index: 2;
+}
+
+body header .overlay p {
+  color: lightgrey;
+  font-size: 50px;
+  position: relativ;
+}
+
+body header .overlay div nav .navml {
+  margin-left: 30vh;
+}
+
+body header .overlay div nav .navml ul li {
+  list-style-type: none;
+}
+
+body header .overlay div nav .navml ul li .bouton {
+  font-size: 2vh;
+  color: lightgrey;
+}
+
+body header .overlay div nav .navml ul li a i {
+  color: lightgrey;
 }
 /*# sourceMappingURL=main.css.map */
