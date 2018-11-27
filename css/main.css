@@ -9516,6 +9516,15 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+@font-face {
+  font-family: 'nintendo';
+  src: url("../font/NintendoLabo.ttf");
+}
+
+body {
+  background-color: #BEC4CF;
+}
+
 body header {
   height: 100vh;
   background-repeat: no-repeat;
@@ -9523,15 +9532,19 @@ body header {
 
 body header .overlay {
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-body header .overlay p {
-  color: lightgrey;
-  font-size: 50px;
-  position: relativ;
+body header .overlay div h1 {
+  font-size: 90px;
+  font-family: nintendo;
+  color: #BEC4CF;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body header .overlay div h1:hover {
+  font-size: 130px;
 }
 
 body header .overlay div nav .navml {
@@ -9545,9 +9558,228 @@ body header .overlay div nav .navml ul li {
 body header .overlay div nav .navml ul li .bouton {
   font-size: 2vh;
   color: lightgrey;
+  font-family: nintendo;
+  position: relative;
 }
 
 body header .overlay div nav .navml ul li a i {
-  color: lightgrey;
+  color: #6A7C77;
+}
+
+body header .overlay div nav .navml ul li a i:hover {
+  color: #1F2019;
+}
+
+.bouton::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.bouton:hover::after {
+  width: 100%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.bg-dark {
+  background-color: #BEC4CF !important;
+}
+
+.bg-dark a {
+  color: #6A7C77 !important;
+}
+
+.bg-dark a:hover {
+  color: #1F2019 !important;
+}
+
+@font-face {
+  font-family: 'nintendo';
+  src: url("../font/NintendoLabo.ttf");
+}
+
+.section2 {
+  margin-top: 14vh;
+  background-color: #BEC4CF !important;
+}
+
+.section2 h1 {
+  font-family: nintendo;
+  color: #1F2019;
+}
+
+.section2 hr {
+  border-color: #1F2019;
+  width: 15vh;
+}
+
+.section2 div div h3 {
+  font-style: italic;
+  color: #1F2019;
+}
+
+.section2 div div p {
+  color: #1F2019;
+}
+
+.section2 div div button {
+  border-radius: 7px;
+  background-color: #1F2019;
+  color: #BEC4CF;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  outline: none;
+}
+
+.section2 div div button:hover {
+  background-color: #BEC4CF;
+  color: #1F2019;
+}
+
+.percent-count {
+  width: 100px;
+  height: 20px;
+  margin: 20px auto;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 15px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.progress {
+  width: 100px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: black;
+}
+
+@font-face {
+  font-family: 'nintendo';
+  src: url("../font/NintendoLabo.ttf");
+}
+
+.section3 {
+  color: #BEC4CF;
+  background-color: #1F2019;
+}
+
+.section3 h1 {
+  font-family: nintendo;
+}
+
+.section3 hr {
+  border-color: #BEC4CF;
+  width: 15vh;
+}
+
+.section3 div div .borderr {
+  border: 2px solid #BEC4CF;
+  border-radius: 7px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.section3 div div .borderr hr {
+  width: 3vh;
+  border-color: #BEC4CF;
+}
+
+.section3 div div .borderr:hover {
+  -webkit-box-shadow: 5px 8px #BEC4CF;
+          box-shadow: 5px 8px #BEC4CF;
+  border: 4px solid;
+}
+
+.section4 h1 {
+  font-family: nintendo;
+  color: #1F2019;
+}
+
+.section4 hr {
+  border-color: #1F2019;
+  width: 15vh;
+}
+
+.section4 .d-flex button {
+  border-radius: 7px;
+  background-color: #1F2019;
+  color: #BEC4CF;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  outline: none;
+}
+
+.section4 .d-flex button:hover {
+  background-color: #BEC4CF;
+  color: #1F2019;
+}
+
+.section4 .d-flex img {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.section4 .d-flex img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.section5 {
+  color: #BEC4CF;
+  background-color: #1F2019;
+}
+
+.section5 h1 {
+  font-family: nintendo;
+  color: #BEC4CF;
+}
+
+.section5 hr {
+  border-color: #BEC4CF;
+  width: 15vh;
+}
+
+.section5 button {
+  border-radius: 7px;
+  background-color: #BEC4CF;
+  color: #1F2019;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  outline: none;
+}
+
+.section5 button:hover {
+  background-color: #1F2019;
+  color: #BEC4CF;
+}
+
+footer p {
+  font-family: nintendo;
+}
+
+footer i {
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  color: #1F2019;
+}
+
+footer i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=main.css.map */
