@@ -9525,16 +9525,6 @@ body {
   background-color: #BEC4CF;
 }
 
-body header {
-  height: 100vh;
-  background-repeat: no-repeat;
-}
-
-body header .overlay {
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 body header .overlay div h1 {
   font-size: 90px;
   font-family: nintendo;
@@ -9547,26 +9537,28 @@ body header .overlay div h1:hover {
   font-size: 130px;
 }
 
-body header .overlay div nav .navml {
-  margin-left: 30vh;
-}
-
-body header .overlay div nav .navml ul li {
+body header .overlay div nav .navml .container ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style-type: none;
 }
 
-body header .overlay div nav .navml ul li .bouton {
+body header .overlay div nav .navml .container ul li .bouton {
   font-size: 2vh;
   color: lightgrey;
   font-family: nintendo;
   position: relative;
 }
 
-body header .overlay div nav .navml ul li a i {
+body header .overlay div nav .navml .container ul li a i {
   color: #6A7C77;
 }
 
-body header .overlay div nav .navml ul li a i:hover {
+body header .overlay div nav .navml .container ul li a i:hover {
   color: #1F2019;
 }
 
@@ -9603,7 +9595,6 @@ body header .overlay div nav .navml ul li a i:hover {
 }
 
 .section2 {
-  margin-top: 14vh;
   background-color: #BEC4CF !important;
 }
 
